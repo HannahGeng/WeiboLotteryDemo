@@ -1,0 +1,23 @@
+
+//
+//  GBHPrefix.pch
+//  WeiboLotteryDemo
+//
+//  Created by binghan geng on 16/10/9.
+//  Copyright © 2016年 binghan geng. All rights reserved.
+//
+
+#ifndef GBHPrefix_pch
+#define GBHPrefix_pch
+
+#import "GBHArenaViewController.h"
+#import "GBHDiscoverViewController.h"
+#import "GBHHallViewController.h"
+#import "GBHHistoryViewController.h"
+#import "GBHTabBarController.h"
+#import "GBHMyLotteryViewController.h"
+#import "GBHTabBar.h"
+#import "GBHNavigationController.h"
+#import "GBHTabBarButton.h"
+
+#endif /* GBHPrefix_pch */
