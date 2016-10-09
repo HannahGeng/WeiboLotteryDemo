@@ -19,5 +19,11 @@
 #import "GBHTabBar.h"
 #import "GBHNavigationController.h"
 #import "GBHTabBarButton.h"
+#import "GBHCover.h"
+#import "GBHActiveMenu.h"
+
+#define GBHScreenBounds [UIScreen mainScreen].bounds
+
+#define GBHKeyWindow [UIApplication sharedApplication].keyWindow
 
 #endif /* GBHPrefix_pch */

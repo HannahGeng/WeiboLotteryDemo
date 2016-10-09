@@ -23,6 +23,9 @@
 		89BD02E91DAA834800C288B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD02E81DAA834800C288B8 /* main.m */; };
 		89BD02EC1DAA84AF00C288B8 /* GBHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD02EB1DAA84AF00C288B8 /* GBHNavigationController.m */; };
 		89BD02EF1DAA8A1E00C288B8 /* GBHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD02EE1DAA8A1E00C288B8 /* GBHTabBarButton.m */; };
+		89BD02F21DAA8E7900C288B8 /* GBHCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD02F11DAA8E7900C288B8 /* GBHCover.m */; };
+		89BD02F51DAA8E8700C288B8 /* GBHActiveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD02F41DAA8E8700C288B8 /* GBHActiveMenu.m */; };
+		89BD02F71DAA8E9800C288B8 /* GBHActiveMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02F61DAA8E9800C288B8 /* GBHActiveMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,11 @@
 		89BD02EB1DAA84AF00C288B8 /* GBHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHNavigationController.m; sourceTree = "<group>"; };
 		89BD02ED1DAA8A1E00C288B8 /* GBHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHTabBarButton.h; sourceTree = "<group>"; };
 		89BD02EE1DAA8A1E00C288B8 /* GBHTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHTabBarButton.m; sourceTree = "<group>"; };
+		89BD02F01DAA8E7900C288B8 /* GBHCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHCover.h; sourceTree = "<group>"; };
+		89BD02F11DAA8E7900C288B8 /* GBHCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHCover.m; sourceTree = "<group>"; };
+		89BD02F31DAA8E8700C288B8 /* GBHActiveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHActiveMenu.h; sourceTree = "<group>"; };
+		89BD02F41DAA8E8700C288B8 /* GBHActiveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHActiveMenu.m; sourceTree = "<group>"; };
+		89BD02F61DAA8E9800C288B8 /* GBHActiveMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBHActiveMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +278,11 @@
 		89BD02B51DAA7B7C00C288B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				89BD02F01DAA8E7900C288B8 /* GBHCover.h */,
+				89BD02F11DAA8E7900C288B8 /* GBHCover.m */,
+				89BD02F31DAA8E8700C288B8 /* GBHActiveMenu.h */,
+				89BD02F41DAA8E8700C288B8 /* GBHActiveMenu.m */,
+				89BD02F61DAA8E9800C288B8 /* GBHActiveMenu.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89BD02F71DAA8E9800C288B8 /* GBHActiveMenu.xib in Resources */,
 				89BD02861DAA7AF600C288B8 /* LaunchScreen.storyboard in Resources */,
 				89BD02831DAA7AF600C288B8 /* Assets.xcassets in Resources */,
 				89BD02811DAA7AF600C288B8 /* Main.storyboard in Resources */,
@@ -531,11 +545,13 @@
 				89BD02DF1DAA7CAE00C288B8 /* GBHHallViewController.m in Sources */,
 				89BD02DC1DAA7C9B00C288B8 /* GBHDiscoverViewController.m in Sources */,
 				89BD02D01DAA7BD100C288B8 /* GBHMyLotteryViewController.m in Sources */,
+				89BD02F21DAA8E7900C288B8 /* GBHCover.m in Sources */,
 				89BD02EF1DAA8A1E00C288B8 /* GBHTabBarButton.m in Sources */,
 				89BD02D91DAA7C8200C288B8 /* GBHArenaViewController.m in Sources */,
 				89BD02CC1DAA7B7C00C288B8 /* AppDelegate.m in Sources */,
 				89BD02EC1DAA84AF00C288B8 /* GBHNavigationController.m in Sources */,
 				89BD02E91DAA834800C288B8 /* main.m in Sources */,
+				89BD02F51DAA8E8700C288B8 /* GBHActiveMenu.m in Sources */,
 				89BD02E21DAA7CC300C288B8 /* GBHHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

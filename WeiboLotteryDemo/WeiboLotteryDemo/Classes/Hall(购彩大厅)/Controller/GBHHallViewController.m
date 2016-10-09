@@ -8,7 +8,7 @@
 
 #import "GBHHallViewController.h"
 
-@interface GBHHallViewController ()
+@interface GBHHallViewController ()<GBHActiveDelegate>
 
 @end
 
@@ -17,16 +17,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationItem.title = @"购彩大厅";
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // 左边按钮
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"CS50_activity_image"] style:UIBarButtonItemStylePlain target:self action:@selector(active)];
+    
+    // 添加右边按钮
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Development"] style:UIBarButtonItemStylePlain target:self action:@selector(popMenu)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)active
+{
+    [GBHCover show];
+    
+    //弹出菜单
+    GBHActiveMenu * menu = [GBHActiveMenu showInPoint:self.view.center];
+    
+    menu.delegate = self;
+}
+
+- (void)activeMenuDidClickCloseBtn:(GBHActiveMenu *)menu
+{
+    void(^completion)() = ^{
+      
+        [GBHCover hide];
+    };
+    
+    [GBHActiveMenu hideInPoint:CGPointMake(44, 44) completion:completion];
+}
+
+- (void)popMenu
+{
+    
 }
 
 #pragma mark - Table view data source
