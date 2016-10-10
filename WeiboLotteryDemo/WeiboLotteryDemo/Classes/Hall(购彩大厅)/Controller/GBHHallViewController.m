@@ -12,7 +12,7 @@
 
 @property (nonatomic,assign) BOOL isPopMenu;
 
-@property (nonatomic,strong)GBHDownMenu * downMenu;
+@property (nonatomic,weak)GBHDownMenu * downMenu;
 
 @end
 
@@ -74,6 +74,8 @@
 #pragma mark - 下拉菜单
 - (void)popMenu
 {
+    NSLog(@"%ld",(long)_isPopMenu);
+    
     if (_isPopMenu == NO) {
         
         [self downMenu];

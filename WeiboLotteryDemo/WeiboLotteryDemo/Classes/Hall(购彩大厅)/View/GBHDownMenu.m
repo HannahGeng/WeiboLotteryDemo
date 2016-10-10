@@ -32,6 +32,18 @@
     return _btns;
 }
 
+- (void)hide
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.transform = CGAffineTransformMakeTranslation(0, -self.height);
+        
+    } completion:^(BOOL finished) {
+        
+        [self removeFromSuperview];
+    }];
+}
+
 + (instancetype)showInView:(UIView *)superView items:(NSArray *)items oriY:(CGFloat)oriY
 {
     NSUInteger count = items.count;
@@ -43,7 +55,7 @@
         [excp raise];
     }
     
-    NSUInteger rows = (count - 1) / GBHCols; + 1;
+    NSUInteger rows = (count - 1) / GBHCols + 1;
     CGFloat menuH = rows * GBHItemWH;
     
     GBHDownMenu * menu = [[GBHDownMenu alloc] initWithFrame:CGRectMake(0, oriY, GBHScreenW, menuH)];
@@ -63,6 +75,7 @@
     
     [superView addSubview:blackView];
     
+#warning 动画
     //往下移动的动画
     menu.transform = CGAffineTransformMakeTranslation(0, -menu.height);
     
@@ -149,18 +162,6 @@
         
         btn.frame = CGRectMake(x, y, GBHItemWH, GBHItemWH);
     }
-}
-
-- (void)hide
-{
-    [UIView animateWithDuration:0.5 animations:^{
-        
-        self.transform = CGAffineTransformMakeTranslation(0, -self.height);
-        
-    } completion:^(BOOL finished) {
-        
-        [self removeFromSuperview];
-    }];
 }
 
 @end
