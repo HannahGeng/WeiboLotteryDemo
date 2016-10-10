@@ -33,7 +33,6 @@
         
         // 弹出黑色菜单
         _downMenu = [GBHDownMenu showInView:self.view items:items oriY:0];
-        
     }
     
     return _downMenu;
@@ -74,8 +73,6 @@
 #pragma mark - 下拉菜单
 - (void)popMenu
 {
-    NSLog(@"%ld",(long)_isPopMenu);
-    
     if (_isPopMenu == NO) {
         
         [self downMenu];
@@ -88,7 +85,6 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
     return 0;

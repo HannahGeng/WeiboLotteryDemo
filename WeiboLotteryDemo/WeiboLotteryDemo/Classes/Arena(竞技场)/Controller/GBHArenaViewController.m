@@ -14,24 +14,42 @@
 
 @implementation GBHArenaViewController
 
+//重写，自定义控制器View
+- (void)loadView
+{
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:GBHScreenBounds];
+    
+    imageView.userInteractionEnabled = YES;
+    
+    imageView.image = [UIImage imageNamed:@"NLArenaBackground"];
+    
+    self.view = imageView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UISegmentedControl * seg = [[UISegmentedControl alloc] initWithItems:@[@"足球",@"篮球"]];
+    
+    seg.width += 40;
+    
+    //设置seg的背景图片
+    [seg setBackgroundImage:[UIImage imageNamed:@"CPArenaSegmentBG"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    [seg setBackgroundImage:[UIImage imageNamed:@"CPArenaSegmentSelectedBG"] forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    
+    seg.selectedSegmentIndex = 0;
+    
+    //设置边框颜色
+    seg.tintColor = GBHColor(0, 142, 143);
+    
+    NSMutableDictionary * dict = [NSMutableDictionary dictionary];
+    
+    dict[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    
+    [seg setTitleTextAttributes:dict forState:UIControlStateSelected];
+    
+    self.navigationItem.titleView = seg;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

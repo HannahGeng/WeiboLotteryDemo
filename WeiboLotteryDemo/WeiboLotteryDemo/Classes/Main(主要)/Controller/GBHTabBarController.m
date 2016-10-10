@@ -48,9 +48,6 @@
     
     [self setUpOneChildViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:nil];
     
-    arena.view.backgroundColor = [UIColor purpleColor];
-    
-    
     // 发现
     GBHDiscoverViewController *discover = [[GBHDiscoverViewController alloc] init];
     [self setUpOneChildViewController:discover image:[UIImage imageNamed:@"TabBar_Discovery_new"] selImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
@@ -80,7 +77,12 @@
     
     vc.view.backgroundColor = [self randomColor];
     
-    GBHNavigationController * nav = [[GBHNavigationController alloc] initWithRootViewController:vc];
+    UINavigationController * nav = [[GBHNavigationController alloc] initWithRootViewController:vc];
+    
+    if ([vc isKindOfClass:[GBHArenaNavController class]]) {
+        
+        nav = [[GBHArenaNavController alloc] initWithRootViewController:vc];
+    }
     
     [self addChildViewController:nav];
 }

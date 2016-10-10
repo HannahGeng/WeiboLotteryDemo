@@ -11,6 +11,7 @@
 		3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9951DAB902F008C0378 /* GBHMenuItem.m */; };
 		3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9991DAB91A6008C0378 /* UIImage+Image.m */; };
 		3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */; };
+		89625EC51DABDDA600217429 /* GBHArenaNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625EC41DABDDA600217429 /* GBHArenaNavController.m */; };
 		89BD02811DAA7AF600C288B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD027F1DAA7AF600C288B8 /* Main.storyboard */; };
 		89BD02831DAA7AF600C288B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02821DAA7AF600C288B8 /* Assets.xcassets */; };
 		89BD02861DAA7AF600C288B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02841DAA7AF600C288B8 /* LaunchScreen.storyboard */; };
@@ -58,6 +59,8 @@
 		3D76A9991DAB91A6008C0378 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		3D76A99A1DAB91A6008C0378 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		89625EC31DABDDA600217429 /* GBHArenaNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHArenaNavController.h; sourceTree = "<group>"; };
+		89625EC41DABDDA600217429 /* GBHArenaNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHArenaNavController.m; sourceTree = "<group>"; };
 		89BD02731DAA7AF600C288B8 /* WeiboLotteryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboLotteryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BD02801DAA7AF600C288B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89BD02821DAA7AF600C288B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 			children = (
 				89BD02D71DAA7C8200C288B8 /* GBHArenaViewController.h */,
 				89BD02D81DAA7C8200C288B8 /* GBHArenaViewController.m */,
+				89625EC31DABDDA600217429 /* GBHArenaNavController.h */,
+				89625EC41DABDDA600217429 /* GBHArenaNavController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -581,6 +586,7 @@
 				89BD02D91DAA7C8200C288B8 /* GBHArenaViewController.m in Sources */,
 				89BD02CC1DAA7B7C00C288B8 /* AppDelegate.m in Sources */,
 				89BD02EC1DAA84AF00C288B8 /* GBHNavigationController.m in Sources */,
+				89625EC51DABDDA600217429 /* GBHArenaNavController.m in Sources */,
 				89BD02E91DAA834800C288B8 /* main.m in Sources */,
 				3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */,
 				89BD02F51DAA8E8700C288B8 /* GBHActiveMenu.m in Sources */,
