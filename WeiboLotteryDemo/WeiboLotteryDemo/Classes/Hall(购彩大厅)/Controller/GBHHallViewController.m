@@ -10,9 +10,34 @@
 
 @interface GBHHallViewController ()<GBHActiveDelegate>
 
+@property (nonatomic,assign) BOOL isPopMenu;
+
+@property (nonatomic,strong)GBHDownMenu * downMenu;
+
 @end
 
 @implementation GBHHallViewController
+
+- (GBHDownMenu *)downMenu
+{
+    if (_downMenu == nil) {
+        
+        GBHMenuItem *item = [GBHMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        GBHMenuItem *item1 = [GBHMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        GBHMenuItem *item2 = [GBHMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        GBHMenuItem *item3 = [GBHMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        GBHMenuItem *item4 = [GBHMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        GBHMenuItem *item5 = [GBHMenuItem itemWithImage:[UIImage imageNamed:@"Development"] title:nil];
+        
+        NSArray *items = @[item,item1,item2,item3,item4,item5];
+        
+        // 弹出黑色菜单
+        _downMenu = [GBHDownMenu showInView:self.view items:items oriY:0];
+        
+    }
+    
+    return _downMenu;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,9 +71,18 @@
     [GBHActiveMenu hideInPoint:CGPointMake(44, 44) completion:completion];
 }
 
+#pragma mark - 下拉菜单
 - (void)popMenu
 {
+    if (_isPopMenu == NO) {
+        
+        [self downMenu];
+    }else
+    {
+        [self.downMenu hide];
+    }
     
+    _isPopMenu = !_isPopMenu;
 }
 
 #pragma mark - Table view data source

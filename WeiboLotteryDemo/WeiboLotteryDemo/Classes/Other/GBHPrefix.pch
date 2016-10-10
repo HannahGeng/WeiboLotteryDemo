@@ -21,9 +21,14 @@
 #import "GBHTabBarButton.h"
 #import "GBHCover.h"
 #import "GBHActiveMenu.h"
+#import "GBHDownMenu.h"
+#import "GBHMenuItem.h"
+#import "UIImage+Image.h"
+#import "UIView+Frame.h"
 
 #define GBHScreenBounds [UIScreen mainScreen].bounds
-
 #define GBHKeyWindow [UIApplication sharedApplication].keyWindow
+#define GBHScreenW GBHScreenBounds.size.width
+#define GBHScreenH GBHScreenBounds.size.height
 
 #endif /* GBHPrefix_pch */

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D76A9931DAB8FD6008C0378 /* GBHDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9921DAB8FD6008C0378 /* GBHDownMenu.m */; };
+		3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9951DAB902F008C0378 /* GBHMenuItem.m */; };
+		3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9991DAB91A6008C0378 /* UIImage+Image.m */; };
+		3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */; };
 		89BD02811DAA7AF600C288B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD027F1DAA7AF600C288B8 /* Main.storyboard */; };
 		89BD02831DAA7AF600C288B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02821DAA7AF600C288B8 /* Assets.xcassets */; };
 		89BD02861DAA7AF600C288B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02841DAA7AF600C288B8 /* LaunchScreen.storyboard */; };
@@ -46,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D76A9911DAB8FD6008C0378 /* GBHDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHDownMenu.h; sourceTree = "<group>"; };
+		3D76A9921DAB8FD6008C0378 /* GBHDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHDownMenu.m; sourceTree = "<group>"; };
+		3D76A9941DAB902F008C0378 /* GBHMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBHMenuItem.h; path = "WeiboLotteryDemo/Classes/Hall(购彩大厅)/View/GBHMenuItem.h"; sourceTree = SOURCE_ROOT; };
+		3D76A9951DAB902F008C0378 /* GBHMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBHMenuItem.m; path = "WeiboLotteryDemo/Classes/Hall(购彩大厅)/View/GBHMenuItem.m"; sourceTree = SOURCE_ROOT; };
+		3D76A9981DAB91A6008C0378 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		3D76A9991DAB91A6008C0378 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		3D76A99A1DAB91A6008C0378 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		89BD02731DAA7AF600C288B8 /* WeiboLotteryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboLotteryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BD02801DAA7AF600C288B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89BD02821DAA7AF600C288B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +123,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D76A9971DAB918C008C0378 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3D76A9981DAB91A6008C0378 /* UIImage+Image.h */,
+				3D76A9991DAB91A6008C0378 /* UIImage+Image.m */,
+				3D76A99A1DAB91A6008C0378 /* UIView+Frame.h */,
+				3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		89BD026A1DAA7AF600C288B8 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +294,8 @@
 		89BD02B41DAA7B7C00C288B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3D76A9941DAB902F008C0378 /* GBHMenuItem.h */,
+				3D76A9951DAB902F008C0378 /* GBHMenuItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +308,8 @@
 				89BD02F31DAA8E8700C288B8 /* GBHActiveMenu.h */,
 				89BD02F41DAA8E8700C288B8 /* GBHActiveMenu.m */,
 				89BD02F61DAA8E9800C288B8 /* GBHActiveMenu.xib */,
+				3D76A9911DAB8FD6008C0378 /* GBHDownMenu.h */,
+				3D76A9921DAB8FD6008C0378 /* GBHDownMenu.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,6 +422,7 @@
 		89BD02C61DAA7B7C00C288B8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3D76A9971DAB918C008C0378 /* Category */,
 				89BD02E81DAA834800C288B8 /* main.m */,
 				89BD02C71DAA7B7C00C288B8 /* AppDelegate.h */,
 				89BD02C81DAA7B7C00C288B8 /* AppDelegate.m */,
@@ -544,13 +572,17 @@
 				89BD02D31DAA7BEF00C288B8 /* GBHTabBarController.m in Sources */,
 				89BD02DF1DAA7CAE00C288B8 /* GBHHallViewController.m in Sources */,
 				89BD02DC1DAA7C9B00C288B8 /* GBHDiscoverViewController.m in Sources */,
+				3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */,
 				89BD02D01DAA7BD100C288B8 /* GBHMyLotteryViewController.m in Sources */,
 				89BD02F21DAA8E7900C288B8 /* GBHCover.m in Sources */,
+				3D76A9931DAB8FD6008C0378 /* GBHDownMenu.m in Sources */,
 				89BD02EF1DAA8A1E00C288B8 /* GBHTabBarButton.m in Sources */,
+				3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */,
 				89BD02D91DAA7C8200C288B8 /* GBHArenaViewController.m in Sources */,
 				89BD02CC1DAA7B7C00C288B8 /* AppDelegate.m in Sources */,
 				89BD02EC1DAA84AF00C288B8 /* GBHNavigationController.m in Sources */,
 				89BD02E91DAA834800C288B8 /* main.m in Sources */,
+				3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */,
 				89BD02F51DAA8E8700C288B8 /* GBHActiveMenu.m in Sources */,
 				89BD02E21DAA7CC300C288B8 /* GBHHistoryViewController.m in Sources */,
 			);
@@ -703,7 +735,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = PAJJUPRUG8;
-				GCC_PREFIX_HEADER = /Users/binghangeng/Desktop/WeiboLotteryDemo/WeiboLotteryDemo/WeiboLotteryDemo/Classes/Other/GBHPrefix.pch;
+				GCC_PREFIX_HEADER = "/Users/zdzx-008/Desktop/WeiboLotteryDemo/WeiboLotteryDemo/WeiboLotteryDemo/Classes/Other/GBHPrefix.pch";
 				INFOPLIST_FILE = WeiboLotteryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
@@ -718,7 +750,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = PAJJUPRUG8;
-				GCC_PREFIX_HEADER = /Users/binghangeng/Desktop/WeiboLotteryDemo/WeiboLotteryDemo/WeiboLotteryDemo/Classes/Other/GBHPrefix.pch;
+				GCC_PREFIX_HEADER = "/Users/zdzx-008/Desktop/WeiboLotteryDemo/WeiboLotteryDemo/WeiboLotteryDemo/Classes/Other/GBHPrefix.pch";
 				INFOPLIST_FILE = WeiboLotteryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
@@ -796,6 +828,7 @@
 				89BD02A21DAA7AF700C288B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89BD02A31DAA7AF700C288B8 /* Build configuration list for PBXNativeTarget "WeiboLotteryDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -804,6 +837,7 @@
 				89BD02A51DAA7AF700C288B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89BD02A61DAA7AF700C288B8 /* Build configuration list for PBXNativeTarget "WeiboLotteryDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -812,6 +846,7 @@
 				89BD02A81DAA7AF700C288B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
