@@ -12,6 +12,10 @@
 		3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9991DAB91A6008C0378 /* UIImage+Image.m */; };
 		3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */; };
 		89625EC51DABDDA600217429 /* GBHArenaNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625EC41DABDDA600217429 /* GBHArenaNavController.m */; };
+		89625EC71DABE45C00217429 /* GBHDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89625EC61DABE45C00217429 /* GBHDiscoverViewController.storyboard */; };
+		89625ECA1DABE7EA00217429 /* GBHGroupBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625EC91DABE7EA00217429 /* GBHGroupBuyViewController.m */; };
+		89625ECD1DABE84800217429 /* GBHTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625ECC1DABE84800217429 /* GBHTitleView.m */; };
+		89625ED01DABEAA100217429 /* GBHLuckyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625ECF1DABEAA100217429 /* GBHLuckyViewController.m */; };
 		89BD02811DAA7AF600C288B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD027F1DAA7AF600C288B8 /* Main.storyboard */; };
 		89BD02831DAA7AF600C288B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02821DAA7AF600C288B8 /* Assets.xcassets */; };
 		89BD02861DAA7AF600C288B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02841DAA7AF600C288B8 /* LaunchScreen.storyboard */; };
@@ -61,6 +65,13 @@
 		3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		89625EC31DABDDA600217429 /* GBHArenaNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHArenaNavController.h; sourceTree = "<group>"; };
 		89625EC41DABDDA600217429 /* GBHArenaNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHArenaNavController.m; sourceTree = "<group>"; };
+		89625EC61DABE45C00217429 /* GBHDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GBHDiscoverViewController.storyboard; sourceTree = "<group>"; };
+		89625EC81DABE7EA00217429 /* GBHGroupBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHGroupBuyViewController.h; sourceTree = "<group>"; };
+		89625EC91DABE7EA00217429 /* GBHGroupBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHGroupBuyViewController.m; sourceTree = "<group>"; };
+		89625ECB1DABE84800217429 /* GBHTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBHTitleView.h; path = "WeiboLotteryDemo/Classes/Discover(发现)/Controller/GBHTitleView.h"; sourceTree = SOURCE_ROOT; };
+		89625ECC1DABE84800217429 /* GBHTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBHTitleView.m; path = "WeiboLotteryDemo/Classes/Discover(发现)/Controller/GBHTitleView.m"; sourceTree = SOURCE_ROOT; };
+		89625ECE1DABEAA100217429 /* GBHLuckyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHLuckyViewController.h; sourceTree = "<group>"; };
+		89625ECF1DABEAA100217429 /* GBHLuckyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHLuckyViewController.m; sourceTree = "<group>"; };
 		89BD02731DAA7AF600C288B8 /* WeiboLotteryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboLotteryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BD02801DAA7AF600C288B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89BD02821DAA7AF600C288B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -259,6 +270,11 @@
 			children = (
 				89BD02DA1DAA7C9B00C288B8 /* GBHDiscoverViewController.h */,
 				89BD02DB1DAA7C9B00C288B8 /* GBHDiscoverViewController.m */,
+				89625EC61DABE45C00217429 /* GBHDiscoverViewController.storyboard */,
+				89625EC81DABE7EA00217429 /* GBHGroupBuyViewController.h */,
+				89625EC91DABE7EA00217429 /* GBHGroupBuyViewController.m */,
+				89625ECE1DABEAA100217429 /* GBHLuckyViewController.h */,
+				89625ECF1DABEAA100217429 /* GBHLuckyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +289,8 @@
 		89BD02B11DAA7B7C00C288B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				89625ECB1DABE84800217429 /* GBHTitleView.h */,
+				89625ECC1DABE84800217429 /* GBHTitleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -545,6 +563,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89625EC71DABE45C00217429 /* GBHDiscoverViewController.storyboard in Resources */,
 				89BD02F71DAA8E9800C288B8 /* GBHActiveMenu.xib in Resources */,
 				89BD02861DAA7AF600C288B8 /* LaunchScreen.storyboard in Resources */,
 				89BD02831DAA7AF600C288B8 /* Assets.xcassets in Resources */,
@@ -582,11 +601,14 @@
 				89BD02F21DAA8E7900C288B8 /* GBHCover.m in Sources */,
 				3D76A9931DAB8FD6008C0378 /* GBHDownMenu.m in Sources */,
 				89BD02EF1DAA8A1E00C288B8 /* GBHTabBarButton.m in Sources */,
+				89625ED01DABEAA100217429 /* GBHLuckyViewController.m in Sources */,
 				3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */,
 				89BD02D91DAA7C8200C288B8 /* GBHArenaViewController.m in Sources */,
+				89625ECA1DABE7EA00217429 /* GBHGroupBuyViewController.m in Sources */,
 				89BD02CC1DAA7B7C00C288B8 /* AppDelegate.m in Sources */,
 				89BD02EC1DAA84AF00C288B8 /* GBHNavigationController.m in Sources */,
 				89625EC51DABDDA600217429 /* GBHArenaNavController.m in Sources */,
+				89625ECD1DABE84800217429 /* GBHTitleView.m in Sources */,
 				89BD02E91DAA834800C288B8 /* main.m in Sources */,
 				3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */,
 				89BD02F51DAA8E8700C288B8 /* GBHActiveMenu.m in Sources */,

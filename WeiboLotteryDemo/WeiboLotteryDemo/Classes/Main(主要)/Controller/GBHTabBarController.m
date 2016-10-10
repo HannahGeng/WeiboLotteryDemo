@@ -49,7 +49,8 @@
     [self setUpOneChildViewController:arena image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"] title:nil];
     
     // 发现
-    GBHDiscoverViewController *discover = [[GBHDiscoverViewController alloc] init];
+    UIStoryboard * sb = [UIStoryboard storyboardWithName:@"GBHDiscoverViewController" bundle:nil];
+    GBHDiscoverViewController *discover = [sb instantiateInitialViewController];
     [self setUpOneChildViewController:discover image:[UIImage imageNamed:@"TabBar_Discovery_new"] selImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"] title:@"发现"];
     
     // 开奖信息
@@ -75,7 +76,7 @@
     
     [self.items addObject:vc.tabBarItem];
     
-    vc.view.backgroundColor = [self randomColor];
+//    vc.view.backgroundColor = [self randomColor];
     
     UINavigationController * nav = [[GBHNavigationController alloc] initWithRootViewController:vc];
     
