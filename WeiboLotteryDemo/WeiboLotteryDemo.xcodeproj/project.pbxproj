@@ -13,6 +13,8 @@
 		3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */; };
 		89580AE31DAE649300FEC929 /* GBHMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89580AE21DAE649300FEC929 /* GBHMyLotteryViewController.xib */; };
 		89580AE61DAE6B0500FEC929 /* GBHLuckyBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89580AE51DAE6B0500FEC929 /* GBHLuckyBGView.m */; };
+		89580AED1DAE6C4600FEC929 /* GBHNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89580AEC1DAE6C4600FEC929 /* GBHNewFeatureViewController.m */; };
+		89580AF01DAE6C6600FEC929 /* GBHNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89580AEF1DAE6C6600FEC929 /* GBHNewFeatureCell.m */; };
 		89625EC51DABDDA600217429 /* GBHArenaNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625EC41DABDDA600217429 /* GBHArenaNavController.m */; };
 		89625EC71DABE45C00217429 /* GBHDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89625EC61DABE45C00217429 /* GBHDiscoverViewController.storyboard */; };
 		89625ECA1DABE7EA00217429 /* GBHGroupBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625EC91DABE7EA00217429 /* GBHGroupBuyViewController.m */; };
@@ -68,6 +70,10 @@
 		89580AE21DAE649300FEC929 /* GBHMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBHMyLotteryViewController.xib; sourceTree = "<group>"; };
 		89580AE41DAE6B0500FEC929 /* GBHLuckyBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBHLuckyBGView.h; path = "WeiboLotteryDemo/Classes/MyLottery(我的彩票)/Controller/GBHLuckyBGView.h"; sourceTree = SOURCE_ROOT; };
 		89580AE51DAE6B0500FEC929 /* GBHLuckyBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBHLuckyBGView.m; path = "WeiboLotteryDemo/Classes/MyLottery(我的彩票)/Controller/GBHLuckyBGView.m"; sourceTree = SOURCE_ROOT; };
+		89580AEB1DAE6C4600FEC929 /* GBHNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHNewFeatureViewController.h; sourceTree = "<group>"; };
+		89580AEC1DAE6C4600FEC929 /* GBHNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHNewFeatureViewController.m; sourceTree = "<group>"; };
+		89580AEE1DAE6C6600FEC929 /* GBHNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHNewFeatureCell.h; sourceTree = "<group>"; };
+		89580AEF1DAE6C6600FEC929 /* GBHNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHNewFeatureCell.m; sourceTree = "<group>"; };
 		89625EC31DABDDA600217429 /* GBHArenaNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHArenaNavController.h; sourceTree = "<group>"; };
 		89625EC41DABDDA600217429 /* GBHArenaNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHArenaNavController.m; sourceTree = "<group>"; };
 		89625EC61DABE45C00217429 /* GBHDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GBHDiscoverViewController.storyboard; sourceTree = "<group>"; };
@@ -153,6 +159,41 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		89580AE71DAE6C1E00FEC929 /* 新特性界面 */ = {
+			isa = PBXGroup;
+			children = (
+				89580AE81DAE6C1E00FEC929 /* Controller */,
+				89580AE91DAE6C1E00FEC929 /* Model */,
+				89580AEA1DAE6C1E00FEC929 /* View */,
+			);
+			path = "新特性界面";
+			sourceTree = "<group>";
+		};
+		89580AE81DAE6C1E00FEC929 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89580AEB1DAE6C4600FEC929 /* GBHNewFeatureViewController.h */,
+				89580AEC1DAE6C4600FEC929 /* GBHNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89580AE91DAE6C1E00FEC929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89580AEA1DAE6C1E00FEC929 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89580AEE1DAE6C6600FEC929 /* GBHNewFeatureCell.h */,
+				89580AEF1DAE6C6600FEC929 /* GBHNewFeatureCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		89BD026A1DAA7AF600C288B8 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +255,7 @@
 		89BD02A91DAA7B7C00C288B8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89580AE71DAE6C1E00FEC929 /* 新特性界面 */,
 				89BD02AA1DAA7B7C00C288B8 /* Arena(竞技场) */,
 				89BD02AE1DAA7B7C00C288B8 /* Discover(发现) */,
 				89BD02B21DAA7B7C00C288B8 /* Hall(购彩大厅) */,
@@ -606,6 +648,7 @@
 				89BD02DF1DAA7CAE00C288B8 /* GBHHallViewController.m in Sources */,
 				89BD02DC1DAA7C9B00C288B8 /* GBHDiscoverViewController.m in Sources */,
 				3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */,
+				89580AED1DAE6C4600FEC929 /* GBHNewFeatureViewController.m in Sources */,
 				89BD02D01DAA7BD100C288B8 /* GBHMyLotteryViewController.m in Sources */,
 				89580AE61DAE6B0500FEC929 /* GBHLuckyBGView.m in Sources */,
 				89BD02F21DAA8E7900C288B8 /* GBHCover.m in Sources */,
@@ -613,6 +656,7 @@
 				89BD02EF1DAA8A1E00C288B8 /* GBHTabBarButton.m in Sources */,
 				89625ED01DABEAA100217429 /* GBHLuckyViewController.m in Sources */,
 				3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */,
+				89580AF01DAE6C6600FEC929 /* GBHNewFeatureCell.m in Sources */,
 				89BD02D91DAA7C8200C288B8 /* GBHArenaViewController.m in Sources */,
 				89625ECA1DABE7EA00217429 /* GBHGroupBuyViewController.m in Sources */,
 				89BD02CC1DAA7B7C00C288B8 /* AppDelegate.m in Sources */,

@@ -19,9 +19,13 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    GBHTabBarController * tabBar = [[GBHTabBarController alloc] init];
+    UIViewController *rootVc = nil;
     
-    self.window.rootViewController = tabBar;
+//    GBHTabBarController * tabBar = [[GBHTabBarController alloc] init];
+    
+    rootVc = [[GBHNewFeatureViewController alloc] init];
+    
+    self.window.rootViewController = rootVc;
     
     [self.window makeKeyAndVisible];
     

@@ -28,6 +28,8 @@
 #import "GBHArenaNavController.h"
 #import "GBHGroupBuyViewController.h"
 #import "GBHTitleView.h"
+#import "GBHNewFeatureViewController.h"
+#import "GBHNewFeatureCell.h"
 
 #define GBHScreenBounds [UIScreen mainScreen].bounds
 #define GBHKeyWindow [UIApplication sharedApplication].keyWindow
