@@ -9,6 +9,27 @@
 #import "UIView+Frame.h"
 
 @implementation UIView (Frame)
+- (CGFloat)centetY
+{
+    return self.center.y;
+}
+
+- (void)setCentetY:(CGFloat)centetY
+{
+    CGPoint center = self.center;
+    center.y = centetY;
+    self.center = center;
+}
+- (CGFloat)centetX
+{
+    return self.center.x;
+}
+- (void)setCentetX:(CGFloat)centetX
+{
+    CGPoint center = self.center;
+    center.x = centetX;
+    self.center = center;
+}
 - (CGFloat)height
 {
     return self.frame.size.height;

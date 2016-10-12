@@ -10,6 +10,14 @@
 
 @interface GBHNewFeatureViewController ()
 
+@property (nonatomic, assign) CGFloat lastOffsetX;
+
+@property (nonatomic, weak) UIImageView *guideView;
+
+@property (nonatomic, weak) UIImageView *guideLargetView;
+
+@property (nonatomic, weak) UIImageView *guideSmallView;
+
 @end
 
 @implementation GBHNewFeatureViewController
@@ -32,6 +40,66 @@ static NSString * ID = @"cell";
     
     // 注册cell
     [self.collectionView registerClass:[GBHNewFeatureCell class] forCellWithReuseIdentifier:ID];
+    
+    [self setUpAllChildView];
+}
+
+#pragma mark - 添加所有子控件
+- (void)setUpAllChildView
+{
+    //guide1
+    UIImageView * guide = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guide1"]];
+    _guideView = guide;
+    guide.centetX = self.view.centetX;
+    
+    [self.collectionView addSubview:guide];
+    
+    //guideLine
+    UIImageView * guideLine = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideLine"]];
+    guideLine.x -= 170;
+    
+    [self.collectionView addSubview:guideLine];
+    
+    //largeText
+    UIImageView * largeText = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideLargeText1"]];
+    largeText.centetX = self.view.centetX;
+    largeText.centetY = self.view.height * 0.7;
+    _guideLargetView = largeText;
+    [self.collectionView addSubview:largeText];
+    
+    // smallText
+    UIImageView * smallText = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideSmallText1"]];
+    _guideSmallView = smallText;
+    smallText.centetX = self.view.centetX;
+    smallText.centetY = self.view.height * 0.8;
+    [self.collectionView addSubview:smallText];
+}
+
+//减速完成
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    //获取当前x偏移量
+    CGFloat curOffsetX = scrollView.contentOffset.x;
+    
+    //获取差值
+    CGFloat delta = curOffsetX - _lastOffsetX;
+    
+    _guideView.x += 2 *  delta;
+    _guideLargetView.x += 2 * delta;
+    _guideSmallView.x +=  2 * delta;
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        _guideView.x -=  delta;
+        _guideLargetView.x -= delta;
+        _guideSmallView.x -=   delta;
+    }];
+    
+    int page = curOffsetX / self.view.width + 1;
+    
+    // 修改控件的内容
+    _guideView.image = [UIImage imageNamed:[NSString stringWithFormat:@"guide%d",page]];
+    _lastOffsetX = curOffsetX;
+    
 }
 
 - (instancetype)init
