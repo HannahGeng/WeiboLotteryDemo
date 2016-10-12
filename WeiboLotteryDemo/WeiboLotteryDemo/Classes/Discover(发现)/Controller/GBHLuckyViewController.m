@@ -10,6 +10,8 @@
 
 @interface GBHLuckyViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *lightView;
+
 @end
 
 @implementation GBHLuckyViewController
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIImage *image = [UIImage imageNamed:@"lucky_entry_light0"];
+    UIImage *image1 = [UIImage imageNamed:@"lucky_entry_light1"];
+    _lightView.animationImages = @[image,image1];
+    _lightView.animationDuration = 1;
+    [_lightView startAnimating];
 }
 
 @end

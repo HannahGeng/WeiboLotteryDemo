@@ -10,6 +10,8 @@
 
 @interface GBHGroupBuyViewController ()
 
+@property (nonatomic,strong)UIButton * titleView;
+
 @end
 
 @implementation GBHGroupBuyViewController
@@ -18,6 +20,8 @@
     [super viewDidLoad];
     
     UIButton * titleView = [GBHTitleView buttonWithType:UIButtonTypeCustom];
+    
+    _titleView = titleView;
     
     [titleView setTitle:@"全部彩种" forState:UIControlStateNormal];
     
@@ -32,7 +36,7 @@
 
 - (void)help
 {
-    
+    [_titleView setImage:nil forState:UIControlStateNormal];
 }
 
 @end
