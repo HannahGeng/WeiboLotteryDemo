@@ -13,4 +13,6 @@
 /** image */
 @property (nonatomic,strong)UIImage * image;
 
+- (void)setUpIndexPath:(NSIndexPath *)indexPath count:(NSInteger)pagesCount;
+
 @end

@@ -11,6 +11,8 @@
 		3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9951DAB902F008C0378 /* GBHMenuItem.m */; };
 		3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9991DAB91A6008C0378 /* UIImage+Image.m */; };
 		3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */; };
+		894158E51DAFCD27003C63B9 /* GBHGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 894158E41DAFCD27003C63B9 /* GBHGuideTool.m */; };
+		894158E81DAFCD32003C63B9 /* GBHSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 894158E71DAFCD32003C63B9 /* GBHSaveTool.m */; };
 		89580AE31DAE649300FEC929 /* GBHMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89580AE21DAE649300FEC929 /* GBHMyLotteryViewController.xib */; };
 		89580AE61DAE6B0500FEC929 /* GBHLuckyBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89580AE51DAE6B0500FEC929 /* GBHLuckyBGView.m */; };
 		89580AED1DAE6C4600FEC929 /* GBHNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89580AEC1DAE6C4600FEC929 /* GBHNewFeatureViewController.m */; };
@@ -67,6 +69,10 @@
 		3D76A9991DAB91A6008C0378 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		3D76A99A1DAB91A6008C0378 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		894158E31DAFCD27003C63B9 /* GBHGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHGuideTool.h; sourceTree = "<group>"; };
+		894158E41DAFCD27003C63B9 /* GBHGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHGuideTool.m; sourceTree = "<group>"; };
+		894158E61DAFCD32003C63B9 /* GBHSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHSaveTool.h; sourceTree = "<group>"; };
+		894158E71DAFCD32003C63B9 /* GBHSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHSaveTool.m; sourceTree = "<group>"; };
 		89580AE21DAE649300FEC929 /* GBHMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBHMyLotteryViewController.xib; sourceTree = "<group>"; };
 		89580AE41DAE6B0500FEC929 /* GBHLuckyBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBHLuckyBGView.h; path = "WeiboLotteryDemo/Classes/MyLottery(我的彩票)/Controller/GBHLuckyBGView.h"; sourceTree = SOURCE_ROOT; };
 		89580AE51DAE6B0500FEC929 /* GBHLuckyBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBHLuckyBGView.m; path = "WeiboLotteryDemo/Classes/MyLottery(我的彩票)/Controller/GBHLuckyBGView.m"; sourceTree = SOURCE_ROOT; };
@@ -157,6 +163,33 @@
 				3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		894158E01DAFCD0F003C63B9 /* Tool（业务类） */ = {
+			isa = PBXGroup;
+			children = (
+				894158E11DAFCD0F003C63B9 /* Guide */,
+				894158E21DAFCD0F003C63B9 /* Save */,
+			);
+			path = "Tool（业务类）";
+			sourceTree = "<group>";
+		};
+		894158E11DAFCD0F003C63B9 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				894158E31DAFCD27003C63B9 /* GBHGuideTool.h */,
+				894158E41DAFCD27003C63B9 /* GBHGuideTool.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		894158E21DAFCD0F003C63B9 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				894158E61DAFCD32003C63B9 /* GBHSaveTool.h */,
+				894158E71DAFCD32003C63B9 /* GBHSaveTool.m */,
+			);
+			path = Save;
 			sourceTree = "<group>";
 		};
 		89580AE71DAE6C1E00FEC929 /* 新特性界面 */ = {
@@ -255,6 +288,7 @@
 		89BD02A91DAA7B7C00C288B8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				894158E01DAFCD0F003C63B9 /* Tool（业务类） */,
 				89580AE71DAE6C1E00FEC929 /* 新特性界面 */,
 				89BD02AA1DAA7B7C00C288B8 /* Arena(竞技场) */,
 				89BD02AE1DAA7B7C00C288B8 /* Discover(发现) */,
@@ -643,11 +677,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894158E81DAFCD32003C63B9 /* GBHSaveTool.m in Sources */,
 				89BD02D61DAA7BFA00C288B8 /* GBHTabBar.m in Sources */,
 				89BD02D31DAA7BEF00C288B8 /* GBHTabBarController.m in Sources */,
 				89BD02DF1DAA7CAE00C288B8 /* GBHHallViewController.m in Sources */,
 				89BD02DC1DAA7C9B00C288B8 /* GBHDiscoverViewController.m in Sources */,
 				3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */,
+				894158E51DAFCD27003C63B9 /* GBHGuideTool.m in Sources */,
 				89580AED1DAE6C4600FEC929 /* GBHNewFeatureViewController.m in Sources */,
 				89BD02D01DAA7BD100C288B8 /* GBHMyLotteryViewController.m in Sources */,
 				89580AE61DAE6B0500FEC929 /* GBHLuckyBGView.m in Sources */,

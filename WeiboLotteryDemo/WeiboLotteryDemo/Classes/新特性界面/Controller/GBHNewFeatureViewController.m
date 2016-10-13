@@ -134,6 +134,7 @@ static NSString * ID = @"cell";
     return 4;
 }
 
+#define GBHPages 4
 #pragma mark - 返回的每个cell长什么样
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -142,6 +143,9 @@ static NSString * ID = @"cell";
     NSString *imageName = [NSString stringWithFormat:@"guide%ldBackground",indexPath.item + 1];
     
     cell.image = [UIImage imageNamed:imageName];
+    
+    // 告诉cell什么时候是最后一行
+    [cell setUpIndexPath:indexPath count:GBHPages];
     
     return cell;
 }

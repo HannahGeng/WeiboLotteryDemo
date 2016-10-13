@@ -18,14 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    UIViewController *rootVc = nil;
-    
-//    GBHTabBarController * tabBar = [[GBHTabBarController alloc] init];
-    
-    rootVc = [[GBHNewFeatureViewController alloc] init];
-    
-    self.window.rootViewController = rootVc;
+        
+    self.window.rootViewController = [GBHGuideTool chooseRootViewController];
     
     [self.window makeKeyAndVisible];
     
