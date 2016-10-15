@@ -40,6 +40,10 @@
 #import "GBHBlurView.h"
 #import "GBHArrowSettingItem.h"
 #import "GBHSwitchSettingItem.h"
+#import "GBHBaseSettingViewController.h"
+#import "GBHPushViewController.h"
+#import "GBHScoreViewController.h"
+#import "GBHAwardViewController.h"
 
 #define GBHScreenBounds [UIScreen mainScreen].bounds
 #define GBHKeyWindow [UIApplication sharedApplication].keyWindow

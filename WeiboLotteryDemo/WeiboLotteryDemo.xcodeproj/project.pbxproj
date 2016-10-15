@@ -34,6 +34,10 @@
 		89625ECA1DABE7EA00217429 /* GBHGroupBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625EC91DABE7EA00217429 /* GBHGroupBuyViewController.m */; };
 		89625ECD1DABE84800217429 /* GBHTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625ECC1DABE84800217429 /* GBHTitleView.m */; };
 		89625ED01DABEAA100217429 /* GBHLuckyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89625ECF1DABEAA100217429 /* GBHLuckyViewController.m */; };
+		89ADC66E1DB277F6007F516D /* GBHBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC66D1DB277F6007F516D /* GBHBaseSettingViewController.m */; };
+		89ADC6721DB2799F007F516D /* GBHPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC6711DB2799F007F516D /* GBHPushViewController.m */; };
+		89ADC6751DB279AE007F516D /* GBHScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC6741DB279AE007F516D /* GBHScoreViewController.m */; };
+		89ADC6781DB279BF007F516D /* GBHAwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC6771DB279BF007F516D /* GBHAwardViewController.m */; };
 		89BD02811DAA7AF600C288B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD027F1DAA7AF600C288B8 /* Main.storyboard */; };
 		89BD02831DAA7AF600C288B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02821DAA7AF600C288B8 /* Assets.xcassets */; };
 		89BD02861DAA7AF600C288B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD02841DAA7AF600C288B8 /* LaunchScreen.storyboard */; };
@@ -124,6 +128,14 @@
 		89625ECC1DABE84800217429 /* GBHTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBHTitleView.m; path = "WeiboLotteryDemo/Classes/Discover(发现)/Controller/GBHTitleView.m"; sourceTree = SOURCE_ROOT; };
 		89625ECE1DABEAA100217429 /* GBHLuckyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHLuckyViewController.h; sourceTree = "<group>"; };
 		89625ECF1DABEAA100217429 /* GBHLuckyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHLuckyViewController.m; sourceTree = "<group>"; };
+		89ADC66C1DB277F6007F516D /* GBHBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHBaseSettingViewController.h; sourceTree = "<group>"; };
+		89ADC66D1DB277F6007F516D /* GBHBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHBaseSettingViewController.m; sourceTree = "<group>"; };
+		89ADC6701DB2799F007F516D /* GBHPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHPushViewController.h; sourceTree = "<group>"; };
+		89ADC6711DB2799F007F516D /* GBHPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHPushViewController.m; sourceTree = "<group>"; };
+		89ADC6731DB279AE007F516D /* GBHScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHScoreViewController.h; sourceTree = "<group>"; };
+		89ADC6741DB279AE007F516D /* GBHScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHScoreViewController.m; sourceTree = "<group>"; };
+		89ADC6761DB279BF007F516D /* GBHAwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHAwardViewController.h; sourceTree = "<group>"; };
+		89ADC6771DB279BF007F516D /* GBHAwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHAwardViewController.m; sourceTree = "<group>"; };
 		89BD02731DAA7AF600C288B8 /* WeiboLotteryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboLotteryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BD02801DAA7AF600C288B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89BD02821DAA7AF600C288B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -213,8 +225,11 @@
 		8919F10F1DB1DCDD00F00749 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				89ADC66F1DB2798A007F516D /* Push */,
 				8919F1121DB1DCF900F00749 /* GBHSettingViewController.h */,
 				8919F1131DB1DCF900F00749 /* GBHSettingViewController.m */,
+				89ADC66C1DB277F6007F516D /* GBHBaseSettingViewController.h */,
+				89ADC66D1DB277F6007F516D /* GBHBaseSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -353,6 +368,19 @@
 				89580AEF1DAE6C6600FEC929 /* GBHNewFeatureCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		89ADC66F1DB2798A007F516D /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				89ADC6701DB2799F007F516D /* GBHPushViewController.h */,
+				89ADC6711DB2799F007F516D /* GBHPushViewController.m */,
+				89ADC6731DB279AE007F516D /* GBHScoreViewController.h */,
+				89ADC6741DB279AE007F516D /* GBHScoreViewController.m */,
+				89ADC6761DB279BF007F516D /* GBHAwardViewController.h */,
+				89ADC6771DB279BF007F516D /* GBHAwardViewController.m */,
+			);
+			path = Push;
 			sourceTree = "<group>";
 		};
 		89BD026A1DAA7AF600C288B8 = {
@@ -808,6 +836,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ADC66E1DB277F6007F516D /* GBHBaseSettingViewController.m in Sources */,
 				894158E81DAFCD32003C63B9 /* GBHSaveTool.m in Sources */,
 				89BD02D61DAA7BFA00C288B8 /* GBHTabBar.m in Sources */,
 				89BD02D31DAA7BEF00C288B8 /* GBHTabBarController.m in Sources */,
@@ -818,9 +847,11 @@
 				894158E51DAFCD27003C63B9 /* GBHGuideTool.m in Sources */,
 				89580AED1DAE6C4600FEC929 /* GBHNewFeatureViewController.m in Sources */,
 				8919F13C1DB22B5400F00749 /* GBHBlurView.m in Sources */,
+				89ADC6721DB2799F007F516D /* GBHPushViewController.m in Sources */,
 				89BD02D01DAA7BD100C288B8 /* GBHMyLotteryViewController.m in Sources */,
 				8919F1331DB1EB1500F00749 /* UIImage+BoxBlur.m in Sources */,
 				89580AE61DAE6B0500FEC929 /* GBHLuckyBGView.m in Sources */,
+				89ADC6751DB279AE007F516D /* GBHScoreViewController.m in Sources */,
 				89BD02F21DAA8E7900C288B8 /* GBHCover.m in Sources */,
 				8919F1201DB1EAE200F00749 /* GBHArrowSettingItem.m in Sources */,
 				3D76A9931DAB8FD6008C0378 /* GBHDownMenu.m in Sources */,
@@ -844,6 +875,7 @@
 				8919F1231DB1EAF400F00749 /* GBHSwitchSettingItem.m in Sources */,
 				89BD02F51DAA8E8700C288B8 /* GBHActiveMenu.m in Sources */,
 				8919F1391DB22B0F00F00749 /* GBHSettingCell.m in Sources */,
+				89ADC6781DB279BF007F516D /* GBHAwardViewController.m in Sources */,
 				89BD02E21DAA7CC300C288B8 /* GBHHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

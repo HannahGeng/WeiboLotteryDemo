@@ -12,7 +12,7 @@
 
 @interface GBHSettingCell : UITableViewCell
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView;
++ (instancetype)cellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style;
 
 /** item */
 @property (nonatomic,strong)GBHSettingItem * item;

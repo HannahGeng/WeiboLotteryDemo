@@ -10,4 +10,7 @@
 
 @interface GBHArrowSettingItem : GBHSettingItem
 
+// 跳转的控制器
+@property (nonatomic, assign) Class destVc;
+
 @end

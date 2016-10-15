@@ -38,7 +38,7 @@
     return _switchView;
 }
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView
++ (instancetype)cellWithTableView:(UITableView *)tableView style:(UITableViewCellStyle)style
 {
     static NSString * ID = @"cell";
     

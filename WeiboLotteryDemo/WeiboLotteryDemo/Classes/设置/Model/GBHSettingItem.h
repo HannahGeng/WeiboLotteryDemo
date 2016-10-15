@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString *subTitle;
 
 //用来保存每一行cell的功能
-@property (nonatomic,strong) void(^itemOperation)();
+@property (nonatomic,strong) void(^itemOperation)(NSIndexPath * indexPath);
 
 + (instancetype)itemWithImage:(UIImage *)image title:(NSString *)title;
 
