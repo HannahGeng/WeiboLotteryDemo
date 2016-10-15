@@ -32,6 +32,14 @@
 #import "GBHNewFeatureCell.h"
 #import "GBHGuideTool.h"
 #import "GBHSaveTool.h"
+#import "GBHSettingViewController.h"
+#import "GBHSettingGroup.h"
+#import "GBHSettingItem.h"
+#import "DRNRealTimeBlurView.h"
+#import "GBHSettingCell.h"
+#import "GBHBlurView.h"
+#import "GBHArrowSettingItem.h"
+#import "GBHSwitchSettingItem.h"
 
 #define GBHScreenBounds [UIScreen mainScreen].bounds
 #define GBHKeyWindow [UIApplication sharedApplication].keyWindow

@@ -56,7 +56,9 @@
 
 - (void)settting
 {
-    NSLog(@"点击设置");
+    GBHSettingViewController * vc = [[GBHSettingViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

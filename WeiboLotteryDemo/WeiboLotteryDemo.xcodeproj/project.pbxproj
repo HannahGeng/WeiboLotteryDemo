@@ -11,6 +11,18 @@
 		3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9951DAB902F008C0378 /* GBHMenuItem.m */; };
 		3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A9991DAB91A6008C0378 /* UIImage+Image.m */; };
 		3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */; };
+		8919F1141DB1DCF900F00749 /* GBHSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F1131DB1DCF900F00749 /* GBHSettingViewController.m */; };
+		8919F1171DB1EA8900F00749 /* GBHSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F1161DB1EA8900F00749 /* GBHSettingItem.m */; };
+		8919F11A1DB1EA9A00F00749 /* GBHSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F1191DB1EA9A00F00749 /* GBHSettingGroup.m */; };
+		8919F1201DB1EAE200F00749 /* GBHArrowSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F11F1DB1EAE200F00749 /* GBHArrowSettingItem.m */; };
+		8919F1231DB1EAF400F00749 /* GBHSwitchSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F1221DB1EAF400F00749 /* GBHSwitchSettingItem.m */; };
+		8919F1321DB1EB1500F00749 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F1291DB1EB1500F00749 /* DRNRealTimeBlurView.m */; };
+		8919F1331DB1EB1500F00749 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F12B1DB1EB1500F00749 /* UIImage+BoxBlur.m */; };
+		8919F1341DB1EB1500F00749 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F12E1DB1EB1500F00749 /* MBProgressHUD+XMG.m */; };
+		8919F1351DB1EB1500F00749 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8919F12F1DB1EB1500F00749 /* MBProgressHUD.bundle */; };
+		8919F1361DB1EB1500F00749 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F1311DB1EB1500F00749 /* MBProgressHUD.m */; };
+		8919F1391DB22B0F00F00749 /* GBHSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F1381DB22B0F00F00749 /* GBHSettingCell.m */; };
+		8919F13C1DB22B5400F00749 /* GBHBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8919F13B1DB22B5400F00749 /* GBHBlurView.m */; };
 		894158E51DAFCD27003C63B9 /* GBHGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 894158E41DAFCD27003C63B9 /* GBHGuideTool.m */; };
 		894158E81DAFCD32003C63B9 /* GBHSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 894158E71DAFCD32003C63B9 /* GBHSaveTool.m */; };
 		89580AE31DAE649300FEC929 /* GBHMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89580AE21DAE649300FEC929 /* GBHMyLotteryViewController.xib */; };
@@ -69,6 +81,29 @@
 		3D76A9991DAB91A6008C0378 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		3D76A99A1DAB91A6008C0378 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		8919F1121DB1DCF900F00749 /* GBHSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHSettingViewController.h; sourceTree = "<group>"; };
+		8919F1131DB1DCF900F00749 /* GBHSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHSettingViewController.m; sourceTree = "<group>"; };
+		8919F1151DB1EA8900F00749 /* GBHSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHSettingItem.h; sourceTree = "<group>"; };
+		8919F1161DB1EA8900F00749 /* GBHSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHSettingItem.m; sourceTree = "<group>"; };
+		8919F1181DB1EA9A00F00749 /* GBHSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHSettingGroup.h; sourceTree = "<group>"; };
+		8919F1191DB1EA9A00F00749 /* GBHSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHSettingGroup.m; sourceTree = "<group>"; };
+		8919F11E1DB1EAE200F00749 /* GBHArrowSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHArrowSettingItem.h; sourceTree = "<group>"; };
+		8919F11F1DB1EAE200F00749 /* GBHArrowSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHArrowSettingItem.m; sourceTree = "<group>"; };
+		8919F1211DB1EAF400F00749 /* GBHSwitchSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHSwitchSettingItem.h; sourceTree = "<group>"; };
+		8919F1221DB1EAF400F00749 /* GBHSwitchSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHSwitchSettingItem.m; sourceTree = "<group>"; };
+		8919F1281DB1EB1500F00749 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		8919F1291DB1EB1500F00749 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		8919F12A1DB1EB1500F00749 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		8919F12B1DB1EB1500F00749 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		8919F12D1DB1EB1500F00749 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
+		8919F12E1DB1EB1500F00749 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
+		8919F12F1DB1EB1500F00749 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		8919F1301DB1EB1500F00749 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8919F1311DB1EB1500F00749 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8919F1371DB22B0F00F00749 /* GBHSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHSettingCell.h; sourceTree = "<group>"; };
+		8919F1381DB22B0F00F00749 /* GBHSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHSettingCell.m; sourceTree = "<group>"; };
+		8919F13A1DB22B5400F00749 /* GBHBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHBlurView.h; sourceTree = "<group>"; };
+		8919F13B1DB22B5400F00749 /* GBHBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHBlurView.m; sourceTree = "<group>"; };
 		894158E31DAFCD27003C63B9 /* GBHGuideTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHGuideTool.h; sourceTree = "<group>"; };
 		894158E41DAFCD27003C63B9 /* GBHGuideTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBHGuideTool.m; sourceTree = "<group>"; };
 		894158E61DAFCD32003C63B9 /* GBHSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBHSaveTool.h; sourceTree = "<group>"; };
@@ -163,6 +198,99 @@
 				3D76A99B1DAB91A6008C0378 /* UIView+Frame.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		8919F10E1DB1DCDD00F00749 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				8919F10F1DB1DCDD00F00749 /* Controller */,
+				8919F1101DB1DCDD00F00749 /* Model */,
+				8919F1111DB1DCDD00F00749 /* View */,
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
+		8919F10F1DB1DCDD00F00749 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8919F1121DB1DCF900F00749 /* GBHSettingViewController.h */,
+				8919F1131DB1DCF900F00749 /* GBHSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8919F1101DB1DCDD00F00749 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8919F1151DB1EA8900F00749 /* GBHSettingItem.h */,
+				8919F1161DB1EA8900F00749 /* GBHSettingItem.m */,
+				8919F1181DB1EA9A00F00749 /* GBHSettingGroup.h */,
+				8919F1191DB1EA9A00F00749 /* GBHSettingGroup.m */,
+				8919F11E1DB1EAE200F00749 /* GBHArrowSettingItem.h */,
+				8919F11F1DB1EAE200F00749 /* GBHArrowSettingItem.m */,
+				8919F1211DB1EAF400F00749 /* GBHSwitchSettingItem.h */,
+				8919F1221DB1EAF400F00749 /* GBHSwitchSettingItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8919F1111DB1DCDD00F00749 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8919F1371DB22B0F00F00749 /* GBHSettingCell.h */,
+				8919F1381DB22B0F00F00749 /* GBHSettingCell.m */,
+				8919F13A1DB22B5400F00749 /* GBHBlurView.h */,
+				8919F13B1DB22B5400F00749 /* GBHBlurView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8919F1241DB1EB1500F00749 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8919F1251DB1EB1500F00749 /* AMSmoothAlert */,
+				8919F1271DB1EB1500F00749 /* DRNRealTimeBlurView */,
+				8919F12C1DB1EB1500F00749 /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		8919F1251DB1EB1500F00749 /* AMSmoothAlert */ = {
+			isa = PBXGroup;
+			children = (
+				8919F1261DB1EB1500F00749 /* assets */,
+			);
+			path = AMSmoothAlert;
+			sourceTree = "<group>";
+		};
+		8919F1261DB1EB1500F00749 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		8919F1271DB1EB1500F00749 /* DRNRealTimeBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				8919F1281DB1EB1500F00749 /* DRNRealTimeBlurView.h */,
+				8919F1291DB1EB1500F00749 /* DRNRealTimeBlurView.m */,
+				8919F12A1DB1EB1500F00749 /* UIImage+BoxBlur.h */,
+				8919F12B1DB1EB1500F00749 /* UIImage+BoxBlur.m */,
+			);
+			path = DRNRealTimeBlurView;
+			sourceTree = "<group>";
+		};
+		8919F12C1DB1EB1500F00749 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8919F12D1DB1EB1500F00749 /* MBProgressHUD+XMG.h */,
+				8919F12E1DB1EB1500F00749 /* MBProgressHUD+XMG.m */,
+				8919F12F1DB1EB1500F00749 /* MBProgressHUD.bundle */,
+				8919F1301DB1EB1500F00749 /* MBProgressHUD.h */,
+				8919F1311DB1EB1500F00749 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		894158E01DAFCD0F003C63B9 /* Tool（业务类） */ = {
@@ -288,6 +416,7 @@
 		89BD02A91DAA7B7C00C288B8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8919F10E1DB1DCDD00F00749 /* 设置 */,
 				894158E01DAFCD0F003C63B9 /* Tool（业务类） */,
 				89580AE71DAE6C1E00FEC929 /* 新特性界面 */,
 				89BD02AA1DAA7B7C00C288B8 /* Arena(竞技场) */,
@@ -529,6 +658,7 @@
 		89BD02C61DAA7B7C00C288B8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8919F1241DB1EB1500F00749 /* Lib */,
 				3D76A9971DAB918C008C0378 /* Category */,
 				89BD02E81DAA834800C288B8 /* main.m */,
 				89BD02C71DAA7B7C00C288B8 /* AppDelegate.h */,
@@ -653,6 +783,7 @@
 				89BD02831DAA7AF600C288B8 /* Assets.xcassets in Resources */,
 				89580AE31DAE649300FEC929 /* GBHMyLotteryViewController.xib in Resources */,
 				89BD02811DAA7AF600C288B8 /* Main.storyboard in Resources */,
+				8919F1351DB1EB1500F00749 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,25 +814,36 @@
 				89BD02DF1DAA7CAE00C288B8 /* GBHHallViewController.m in Sources */,
 				89BD02DC1DAA7C9B00C288B8 /* GBHDiscoverViewController.m in Sources */,
 				3D76A9961DAB902F008C0378 /* GBHMenuItem.m in Sources */,
+				8919F1341DB1EB1500F00749 /* MBProgressHUD+XMG.m in Sources */,
 				894158E51DAFCD27003C63B9 /* GBHGuideTool.m in Sources */,
 				89580AED1DAE6C4600FEC929 /* GBHNewFeatureViewController.m in Sources */,
+				8919F13C1DB22B5400F00749 /* GBHBlurView.m in Sources */,
 				89BD02D01DAA7BD100C288B8 /* GBHMyLotteryViewController.m in Sources */,
+				8919F1331DB1EB1500F00749 /* UIImage+BoxBlur.m in Sources */,
 				89580AE61DAE6B0500FEC929 /* GBHLuckyBGView.m in Sources */,
 				89BD02F21DAA8E7900C288B8 /* GBHCover.m in Sources */,
+				8919F1201DB1EAE200F00749 /* GBHArrowSettingItem.m in Sources */,
 				3D76A9931DAB8FD6008C0378 /* GBHDownMenu.m in Sources */,
 				89BD02EF1DAA8A1E00C288B8 /* GBHTabBarButton.m in Sources */,
+				8919F1141DB1DCF900F00749 /* GBHSettingViewController.m in Sources */,
 				89625ED01DABEAA100217429 /* GBHLuckyViewController.m in Sources */,
 				3D76A99C1DAB91A6008C0378 /* UIImage+Image.m in Sources */,
+				8919F11A1DB1EA9A00F00749 /* GBHSettingGroup.m in Sources */,
 				89580AF01DAE6C6600FEC929 /* GBHNewFeatureCell.m in Sources */,
 				89BD02D91DAA7C8200C288B8 /* GBHArenaViewController.m in Sources */,
 				89625ECA1DABE7EA00217429 /* GBHGroupBuyViewController.m in Sources */,
 				89BD02CC1DAA7B7C00C288B8 /* AppDelegate.m in Sources */,
 				89BD02EC1DAA84AF00C288B8 /* GBHNavigationController.m in Sources */,
+				8919F1321DB1EB1500F00749 /* DRNRealTimeBlurView.m in Sources */,
+				8919F1171DB1EA8900F00749 /* GBHSettingItem.m in Sources */,
+				8919F1361DB1EB1500F00749 /* MBProgressHUD.m in Sources */,
 				89625EC51DABDDA600217429 /* GBHArenaNavController.m in Sources */,
 				89625ECD1DABE84800217429 /* GBHTitleView.m in Sources */,
 				89BD02E91DAA834800C288B8 /* main.m in Sources */,
 				3D76A99D1DAB91A6008C0378 /* UIView+Frame.m in Sources */,
+				8919F1231DB1EAF400F00749 /* GBHSwitchSettingItem.m in Sources */,
 				89BD02F51DAA8E8700C288B8 /* GBHActiveMenu.m in Sources */,
+				8919F1391DB22B0F00F00749 /* GBHSettingCell.m in Sources */,
 				89BD02E21DAA7CC300C288B8 /* GBHHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -855,6 +997,7 @@
 				DEVELOPMENT_TEAM = PAJJUPRUG8;
 				GCC_PREFIX_HEADER = /Users/binghangeng/Desktop/WeiboLotteryDemo/WeiboLotteryDemo/WeiboLotteryDemo/Classes/Other/GBHPrefix.pch;
 				INFOPLIST_FILE = WeiboLotteryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.WeiboLotteryDemo;
@@ -870,6 +1013,7 @@
 				DEVELOPMENT_TEAM = PAJJUPRUG8;
 				GCC_PREFIX_HEADER = /Users/binghangeng/Desktop/WeiboLotteryDemo/WeiboLotteryDemo/WeiboLotteryDemo/Classes/Other/GBHPrefix.pch;
 				INFOPLIST_FILE = WeiboLotteryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.WeiboLotteryDemo;
